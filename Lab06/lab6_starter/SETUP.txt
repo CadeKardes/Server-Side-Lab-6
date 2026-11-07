@@ -1,0 +1,27 @@
+Lab 06 — Complete instructor starter project + verified tests
+
+This archive includes the original art API, the original seeded artworks.db,
+the tests/ directory, and the completed bug_report.md.
+
+VERIFIED:
+  - 34 tests passed in the unmodified application
+  - All 5 intentional Part 7 mutations triggered test failures
+  - Original API code restored; original artworks.db unchanged
+
+Windows setup (run in the folder containing app/, tests/, and requirements.txt):
+
+  python -m venv .venv
+  .venv\Scripts\activate
+  python -m pip install -r requirements.txt
+  python -m pytest -v
+
+If PowerShell blocks activation, try Command Prompt instead or run
+.venv\Scripts\python -m pip install -r requirements.txt
+and
+.venv\Scripts\python -m pytest -v
+
+Expected result: 34 passed. The tests use a separate in-memory database,
+so the 11 original paintings are preserved.
+
+For submission, create a public GitHub repository, commit and push the project,
+then submit that repository URL to the Lab 6 D2L drop box.
